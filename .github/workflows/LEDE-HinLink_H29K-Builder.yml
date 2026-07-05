@@ -103,19 +103,6 @@ jobs:
         bash $GITHUB_WORKSPACE/$Settings_SH
 #       bash $GITHUB_WORKSPACE/$Packages_SH
 
-# NEW STEP
-    - name: Enable WireGuard
-      run: |
-        cd lede
-
-        scripts/config --enable PACKAGE_wireguard
-        scripts/config --enable PACKAGE_kmod-wireguard
-        scripts/config --enable PACKAGE_wireguard-tools
-        scripts/config --enable PACKAGE_luci-proto-wireguard
-        scripts/config --enable PACKAGE_luci-app-wireguard
-
-        make defconfig
-
     - name: 下载软件包
       id: package
       run: |
