@@ -12,28 +12,28 @@
 
 💻 Apps Included :
 
-  📒 Wireguard ✅
+  💠 Wireguard ✅
 
-  📒 Addguard Home ✅
+  💠 Addguard Home ✅
 
-  📒 Argon Theme ✅
+  💠 Argon Theme ✅
 
-  📒 CPU Freq Settings ✅
+  💠 CPU Freq Settings ✅
 
-  📒 Terminal ✅
+  💠 Terminal ✅
 
   📒 Docker ❌
   
 
 🔐 IP Address : 192.168.1.1
 
-Username: root
+👤 Username: root
 
-Password: password
+🔒 Password: password
 
-📒 WIFI SSID ：H29K
+🛜 WIFI SSID ：H29K
 
-📒 PASSWORD  ：1234567890
+🔒 PASSWORD  ：1234567890
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
