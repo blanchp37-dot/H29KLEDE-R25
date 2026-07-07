@@ -1,31 +1,4 @@
-🚀 LEDE R25.10.10 / LuCI openwrt-23.05 branch
-  
-🔲 Kernel Version 6.12.63
-
-💻 Device Model : HinLink - H29K **Board ver 1.3**
-   
-📅 Compilation Date : 2026-07-07
-
-🔗 Module : FM350N-GL
-
-👤 Language : English
-
-💻 Apps Included :
-
-  💠 Wireguard ✅
-
-  💠 Addguard Home ✅
-
-  💠 Argon Theme ✅
-
-  💠 CPU Freq Settings ✅
-
-  💠 Terminal ✅
-
-  📒 Docker ❌
-  
-
-🔐 IP Address : 192.168.1.1
+ 🔐 IP Address : 192.168.1.1
 
 👤 Username: root
 
