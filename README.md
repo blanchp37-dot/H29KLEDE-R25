@@ -1,3 +1,43 @@
+🚀 LEDE R25.10.10 / LuCI openwrt-23.05 branch
+   Kernel Version 6.12.63
+
+💻 Device Model : HinLink - H29K **Board ver 1.3**
+   
+📅 Compilation Date : 2026-07-07
+
+🔗 Module : FM350N-GL
+
+👤 Language : English
+
+💻 Apps Included :
+
+  📒 Wireguard ✅
+
+  📒 Addguard Home ✅
+
+  📒 Argon Theme ✅
+
+  📒 CPU Freq Settings ✅
+
+  📒 Terminal ✅
+
+  📒 Docker ❌
+  
+
+🌱 Code branch: master
+
+🔐 IP Address : 192.168.1.1
+
+Username: root
+
+Password: password
+
+📒 WIFI SSID ：H29K
+
+📒 PASSWORD  ：1234567890
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Actions-OpenWrt
 [](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
 ![GitHub 星标](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=星标&logo=github)
@@ -9,16 +49,6 @@
 ### HinLink - H29K 固件编译
 
 [![LEDE-HinLink_H29K-Builder](https://github.com/aaaol/OpenWrt/actions/workflows/LEDE-HinLink_H29K-Builder.yml/badge.svg)](https://github.com/aaaol/OpenWrt/actions/workflows/LEDE-HinLink_H29K-Builder.yml)
-
-🌐 管理地址: 192.168.1.1
-
-👤 用户名: root
-
-🔒 密码: password
-
-📒 WIFI：H29K
-
-📒 密码：1234567890
 
 <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
   <img src="https://github.com/user-attachments/assets/3a154eb4-5f06-443a-b839-4edfeaa91eb9" width="32%" style="margin: 0.5%">
