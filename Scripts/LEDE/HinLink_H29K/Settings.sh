@@ -14,7 +14,7 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile 2>/dev/null || true
 # 修改默认主机名
 sed -i "/hostname/s/'LEDE'/'Bl4nc7-H29K'/g" package/base-files/files/bin/config_generate
 
@@ -75,6 +75,17 @@ sed -i '$a net.netfilter.nf_conntrack_max=65535' package/base-files/files/etc/sy
 sed -i "s|DISTRIB_DESCRIPTION=.*|DISTRIB_DESCRIPTION=\"H29KLEDE-Bl4nc7OS (LEDE R26) Build $(TZ=UTC-8 date '+%Y-%m-%d %H:%M')\"|g" package/base-files/files/etc/openwrt_release
 sed -i "s|OPENWRT_RELEASE=.*|OPENWRT_RELEASE=\"H29KLEDE-Bl4nc7OS (LEDE R26) Build $(TZ=UTC-8 date '+%Y-%m-%d %H:%M')\"|g" package/base-files/files/usr/lib/os-release
 
+# Default LuCI theme
+mkdir -p files/etc/uci-defaults
+
+cat > files/etc/uci-defaults/99-bl4nc7-theme <<'EOF'
+#!/bin/sh
+uci set luci.main.mediaurlbase='/luci-static/argon'
+uci commit luci
+exit 0
+EOF
+
+chmod +x files/etc/uci-defaults/99-bl4nc7-theme
 
 # 固件更新地址
 sed -i '/CPU usage/a\                <tr><td width="33\%"><\%:Compile update\%></td><td><a target="_blank" href="https://github.com/blanchp37-dot/H29KLEDE-Bl4nc7OS/releases">📦 Download</a></td></tr>' package/lean/autocore/files/arm/index.htm
