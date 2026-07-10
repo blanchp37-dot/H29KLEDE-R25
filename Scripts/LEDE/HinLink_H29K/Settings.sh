@@ -77,8 +77,8 @@ sed -i "s|OPENWRT_RELEASE=.*|OPENWRT_RELEASE=\"H29KLEDE-Bl4nc7OS (LEDE R26) Buil
 
 
 # 固件更新地址
-sed -i '/CPU usage/a\                <tr><td width="33\%"><\%:Compile update\%></td><td><a target="_blank" href="https://github.com/blanchp37-dot/H29KLEDE-R26/releases">👇查看</a></td></tr>' package/lean/autocore/files/arm/index.htm
-sed -i '/CPU usage/a\                <tr><td width="33%\"><%:Compile update%></td><td><a target="_blank" href="https://github.com/blanchp37-dot/H29KLEDE-R26/releases">👇查看</a></td></tr>' package/lean/autocore/files/arm/index.htm
+sed -i '/CPU usage/a\                <tr><td width="33\%"><\%:Compile update\%></td><td><a target="_blank" href="https://github.com/blanchp37-dot/H29KLEDE-Bl4nc7OS/releases">📦 Download</a></td></tr>' package/lean/autocore/files/arm/index.htm
+sed -i '/CPU usage/a\                <tr><td width="33%\"><%:Compile update%></td><td><a target="_blank" href="https://github.com/blanchp37-dot/H29KLEDE-Bl4nc7OS/releases">📦 Download</a></td></tr>' package/lean/autocore/files/arm/index.htm
 
 echo "========================="
 echo " DIY2 配置完成……"
