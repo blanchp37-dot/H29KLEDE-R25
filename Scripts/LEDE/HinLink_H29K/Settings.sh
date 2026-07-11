@@ -28,9 +28,9 @@ sed -i 's/set wireless.default_radio${devidx}.encryption=none/set wireless.defau
 sed -i '/set wireless.default_radio${devidx}.encryption=psk2/a \\t\tset wireless.default_radio${devidx}.key=1234567890' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 替换时区
-sed -i "s/timezone='.*'/timezone='CST-8'/g" package/base-files/files/bin/config_generate
+sed -i "s/timezone='.*'/timezone='ICT-7'/g" package/base-files/files/bin/config_generate
 if ! grep -q "zonename=" package/base-files/files/bin/config_generate; then
-    sed -i "/timezone='CST-8'/a \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ set system.@system[-1].zonename='Asia/Shanghai'" package/base-files/files/bin/config_generate
+    sed -i "/timezone='CST-8'/a \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ set system.@system[-1].zonename='Asia/Ho_Chi_Minh'" package/base-files/files/bin/config_generate
 else
     sed -i "s/zonename='.*'/zonename='Asia\/Shanghai'/g" package/base-files/files/bin/config_generate
 fi
