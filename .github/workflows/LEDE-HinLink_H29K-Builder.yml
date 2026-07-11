@@ -77,6 +77,14 @@ jobs:
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH lede
+        cd lede
+
+        echo "=============================="
+        echo "LEDE Commit:"
+        git rev-parse HEAD
+        git log -1 --oneline
+        echo "=============================="
+
         ln -sf /workdir/lede $GITHUB_WORKSPACE/lede
 
     - name: 加载自定义订阅源
