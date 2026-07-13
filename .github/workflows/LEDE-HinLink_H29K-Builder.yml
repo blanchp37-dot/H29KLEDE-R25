@@ -115,6 +115,35 @@ jobs:
 
         echo "===== Done ====="
 
+    - name: Add rtw88-backports
+      run: |
+        cd lede
+
+        echo "=================================================="
+        echo " Installing rtw88-backports package"
+        echo "=================================================="
+
+        mkdir -p package/kernel/rtw88-backports
+
+        cp -rf $GITHUB_WORKSPACE/Files/Drivers/* package/kernel/rtw88-backports/
+
+        echo ""
+        echo "===== Package Contents ====="
+        ls -R package/kernel/rtw88-backports
+
+        echo ""
+        echo "===== Patch Files ====="
+        ls package/kernel/rtw88-backports/patches || true
+
+        echo ""
+        echo "===== Makefile ====="
+        head -20 package/kernel/rtw88-backports/Makefile
+
+        echo ""
+        echo "=================================================="
+        echo " rtw88-backports package installed successfully"
+        echo "=================================================="
+
     - name: 加载自定义配置
       run: |
         [ -e "$CONFIG_FILE" ] && mv "$CONFIG_FILE" lede/.config
